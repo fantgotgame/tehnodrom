@@ -1,0 +1,130 @@
+$main_color_text : #FFFFFF;
+$padding_button : 11px 15px;
+    
+* 
+    box-sizing: border-box
+    font-family: 'Exo 2', sans-serif
+
+a
+    text-decoration: none
+
+.header 
+    width: 100%
+    margin: 0 auto
+    height: 130px
+    z-index: 2
+    position: absolute
+    display: flex
+    justify-content: space-between
+    padding-top: 24px
+    &__logo
+        width: 336px
+        height: 73px
+        margin-left: 79px
+    &__menu
+        height: 50px
+    &__contact
+        width: 287px
+        height: 69px
+        margin-right: 32px
+        padding-left: 30px
+        border-left: 2px solid #69B0F8
+
+.menu
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    padding: 0
+    &__list
+        display: inline
+    &__list:not(:last-child)
+        margin-right: 14px
+    &__list:hover
+        border-bottom: 2px solid #FFFFFF
+    &__link
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 19px
+        color: $main_color_text
+        letter-spacing: 0.15em;
+        text-transform: uppercase
+        display: block
+        padding: $padding_button
+
+.contact 
+    display: flex
+    flex-direction: column
+    &-address__link
+        font-style: normal
+        font-weight: normal
+        font-size: 15px
+        line-height: 22px
+        color: #D4E9FF
+        margin-bottom: 11px
+    &-number__link
+        font-style: normal
+        font-weight: 300
+        font-size: 36px
+        line-height: 43px
+        color: $main_color_text
+
+.promo
+    height: 980px
+    position: relative
+    &__container
+        height: 980px
+    &__slide1
+        background: url(../img/promo1.jpg) no-repeat
+        background-size: cover
+        background-position: center
+    &__slide2
+        background: url(../img/promo2.jpg) no-repeat
+        background-size: cover
+        background-position: center
+    &__slide3
+        background: url(../img/promo3.jpg) no-repeat
+        background-size: cover
+        background-position: center
+    &__slide4
+        background: url(../img/promo4.jpg) no-repeat
+        background-size: cover
+        background-position: center
+    &-title
+        position: absolute
+        top: 249px
+        left: 179px
+        z-index: 2
+        width: 705px
+        height: 176px
+        display: flex
+        flex-direction: column
+        &__text
+            font-style: normal
+            font-weight: 800
+            font-size: 68px
+            line-height: 82px
+            color: $main_color_text
+        &__catalog-link
+            width: 242px
+            font-style: normal
+            font-weight: normal
+            font-size: 13px
+            line-height: 19px
+            letter-spacing: 0.15em
+            text-transform: uppercase
+            color: #69B0F8
+            margin-top: 38px
+            display: block
+            padding: $padding_button
+            padding-left: 0
+
+.swiper-pagination
+    position: absolute
+    top: 625px
+    right: 531px
+    width: auto !important
+    left: auto !important
+    margin: 0
+    &-bullet
+        background: #fff;

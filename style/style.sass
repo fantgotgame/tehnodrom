@@ -225,7 +225,7 @@ body
     &__title
         margin: 0px 113px 0px 1102px
         padding-top: 130px
-        +setting_text(800, 68px, 82px, #13293E)
+        +settings_text(800, 68px, 82px, #13293E)
     &-block
         margin-left: 1102px
         margin-top: 41px
@@ -308,9 +308,9 @@ body
     &__title
         width: 705px
         height: 176px
-        +setting_text(800, 68px, 82px, #13293E)
+        +settings_text(800, 68px, 82px, #13293E)
         & > span:last-child
-            +setting_text(800, 68px, 82px, #F79829)
+            +settings_text(800, 68px, 82px, #F79829)
     &-bg
         padding: 76px 153px 76px 138px
         background: #FFFFFF
@@ -319,7 +319,7 @@ body
     &__text
         width: 481px
         height: 78px
-        +setting_text(normal, 21px, 25px, #13293E)
+        +settings_text(normal, 21px, 25px, #13293E)
 
 .map
     height: 580px
@@ -353,7 +353,101 @@ body
         height: 166px
         margin: 52px 258px 52px 550px
         &__text
-            +setting_text (800, 68px, 82px, #FFFFFF)
+            +settings_text (800, 68px, 82px, #FFFFFF)
             text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
             &_second
-                 +setting_text (800, 68px, 82px, #F79829)
+                +settings_text (800, 68px, 82px, #F79829)
+
+.callback
+    width: 100%
+    height: 1130px
+    background-image: url(../img/callback-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom
+    &-info
+        display: flex
+    &-block
+        margin-top: 59px
+        margin-left: 183px
+        width: 772px
+        height: 525px
+        background: #FFFFFF
+        border: 1px solid #ECECEC
+        box-sizing: border-box
+        box-shadow: 4px 4px 16px rgba(20, 42, 82, 0.15)
+        border-radius: 12px
+        &__title
+            width: 343px
+            margin: 35px auto 0 auto
+            +settings_text(300, 36px, 43px, #13293E)
+    &-forms
+        display: flex
+        align-items: center
+        justify-content: space-around
+    &-block-input
+        display: flex
+        flex-direction: column
+    &__input
+        margin: 30px 0 0 0
+        border-radius: 8px
+        border: 1px solid #C4C4C4
+        width: 337px
+        padding: 22px 187px 23px 16px
+        &_message
+            width: 337px
+            height: 258px
+            padding: 22px 196px 22px 16px
+            resize: none
+    &__checkbox
+        margin-top: 40px
+        width: 346px
+        display: flex
+        & input 
+            margin-right: 20px
+    
+
+
+
+
+
+.contacts
+    width: 767px
+    margin-left: 20px
+    &__title
+        width: 448px
+        height: 176px+59px
+        padding-top: 59px
+        margin-left: 159px
+        +settings_text(800, 68px, 82px, #FFFFFF)
+    &__text
+        margin-top: 25px
+        margin-left: 233px-20px
+        +settings_text(300, 36px, 43px, #FFFFFF)
+    &-cards
+        margin-top: 42px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        align-items: center
+        height: 282px
+        align-content: space-between
+    &-card
+        display: flex
+        align-items: center
+        &__img
+            border-radius: 16px
+    &-info  
+        display: flex
+        flex-direction: column
+        margin-left: 28px
+        &__FIO
+            +settings_text(normal, 15px, 22px, #FFFFFF)
+        &__number
+            +settings_text(normal, 12px, 14px, #69B0F8)
+            margin-left: 10px
+
+.number-block
+        display: flex
+        align-items: center
+        margin-top: 10px

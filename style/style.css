@@ -655,6 +655,31 @@ body {
   margin-right: 20px;
 }
 
+.button-sent {
+  background: #69B0F8;
+  border-radius: 16px;
+  width: 350px;
+  height: 60px;
+  outline: none;
+  margin: 40px 211px 0 211px;
+}
+
+.button-sent:hover {
+  background: #F79829;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.button-sent__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  padding-top: 22px;
+  padding-left: 100px;
+}
+
 .contacts {
   width: 767px;
   margin-left: 20px;
@@ -674,12 +699,26 @@ body {
 
 .contacts__text {
   margin-top: 25px;
-  margin-left: 213px;
+  margin-left: 159px;
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
   line-height: 43px;
   color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__text::before {
+  content: " ";
+  width: 30px;
+  height: 2px;
+  background: #69B0F8;
+  margin-right: 24px;
 }
 
 .contacts-cards {
@@ -749,5 +788,101 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 10px;
+}
+
+.instagram-block {
+  width: 525px;
+  height: 89px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.instagram__title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 68px;
+  line-height: 82px;
+  color: #FFFFFF;
+}
+
+.instagram-photos {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 80px 20px 0 20px;
+}
+
+.instagram-drop {
+  display: none;
+}
+
+.instagram-drop__insta-svg {
+  position: absolute;
+  top: 158px;
+  left: 158px;
+}
+
+.instagram-drop__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instagram-drop__comm-svg {
+  position: absolute;
+  top: 322px;
+  left: 211px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.instagram-drop__likes-svg {
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: absolute;
+  top: 322px;
+  left: 282px;
+  margin-left: 20px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.photos-block:hover > a .instagram-drop {
+  display: block;
+}
+
+.footer {
+  width: 100%;
+  height: 538px;
+  background: #1A2436;
 }
 /*# sourceMappingURL=style.css.map */
